@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Inventory Homepage</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+<body>
+	<div class="container text-center">
+		<div>
+			<h1>Welcome to Inventory App </h1>
+		</div>
+		
+		<!-- CRUD Many 2 one relationship -->
+		<div class="p-2">
+			<a class="h2" th:href="@{/users}">List Users</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/categories/new}">Create Category</a>
+		</div>
+		
+		<div class="p-2">
+			<a class="h2" th:href="@{/products}">List Product</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/products/new}">Create Product</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/brands}">List Brand</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/brands/new}">Create Brand</a>
+		</div>
+
+
+	</div>
+</body>
+</html>
